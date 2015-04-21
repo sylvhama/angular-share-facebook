@@ -1,5 +1,6 @@
 'use strict'
 
+angular.module('MyApp').directive 'shareFb', ['Facebook', (Facebook) ->
   restrict: 'C'
   link: (scope, element, attrs) ->
     $(element).on "click", (event) ->
@@ -13,5 +14,4 @@
 
 #Via sharer PHP
 #<a  href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank"></a>
-
 
